@@ -4,3 +4,4 @@
 * 学习使用markdown
 * 学习使用ajax jsonp
 * 学习使用nodejs
+* 今天学了jquery mobile
