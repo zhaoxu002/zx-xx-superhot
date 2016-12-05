@@ -1,7 +1,18 @@
 # zx-xx-superhot
-# 这是一个测试用的项目
-* 学习使用github
-* 学习使用markdown
+## 新知识
+* github
+* markdown
+* nodejs
+* ES6
+
+## 学过 未掌握透彻
+* http基础知识
+* css flex
+* JS 算法 闭包 作用域
 * 学习使用ajax jsonp
-* 学习使用nodejs
-* 今天学了jquery mobile
+* 后端php Apache 接口API
+* 数据库 MySQL语句 建表等
+
+## 待学习
+* mv*框架
+* 函数式编程
