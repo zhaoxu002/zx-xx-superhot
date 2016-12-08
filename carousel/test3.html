@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>carousel</title>
+    <style media="screen">
+      .carousel{
+        height: 240px;
+        width: 360px;
+        overflow: hidden;
+        border: 1px solid #abc;
+      }
+      .imglist{
+        width: 360px;
+        height: 240px;
+        overflow: hidden;
+        position: relative;
+      }
+      .imglist img{
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="imglist">
+        <img src="1.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="3.jpg" alt="">
+        <img src="4.jpg" alt="">
+        <img src="5.jpg" alt="">
+      </div>
+    </div>
+    <script src="jq.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function () {
+        var m = 1,
+            speed = 2000; //循环变量
+
+        $('.imglist img:first').show(); //the first img
+
+        function intervalFunction() {
+          if (m > 4) {
+            m = 0;
+          }
+          controlImage(m); // call a function
+          m ++;
+        }
+
+        function controlImage(m) {
+          $('.imglist img').stop().eq(m).fadeIn().siblings('img').fadeOut();
+        }
+
+        var timer = setInterval(intervalFunction, speed); // 必须把定时赋给一个变量  要不然就加速
+      })
+    </script>
+  </body>
+</html>
